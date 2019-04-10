@@ -34,10 +34,15 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,10 +59,16 @@ Return the modified array.
 
 const removeOne = (num, arr) => {
   // Solution code here...
+  if (num % 3 === 2) arr.pop();
 };
 
 const removeElements = (arr, callback) => {
   // Solution code here...
+  for (let i = 0; i < arr.length; i++) {
+    let num =  arr[i];
+    callback(num, arr);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,6 +79,9 @@ Write a function named removeWithForEach that produces the same output as challe
 
 const removeWithForEach = (arr, callback) => {
   // Solution code here...
+  arr.forEach((number) => callback(number,arr));
+
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,12 +96,16 @@ This anonymous function should accept up to three arguments: the element, the in
 
 const removeWithAnon = (arr) => {
   // Solution code here...
+  arr.forEach((num) => {
+    if (num % 3 === 2) arr.pop();
+  });
+  return(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named createList that takes in an array of the current store intentory.
+Write a function named createList that takes in an array of the current store inventory.
 
 The inventory is formatted like this:
 [
@@ -101,8 +119,15 @@ The inventory is formatted like this:
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
-const createList = (availableItems) => {
+const createList = (inventory) => {
   // Solution code here...
+  const list = [];
+  inventory.forEach( item => {
+    if (item.available) {
+      list.push(item.name);
+    }
+  })
+  return (list);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -121,6 +146,19 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  const output = [];
+  arr.forEach(num => {
+    if (num % 3 === 0 && num % 5 === 0) {
+      output.push('Fizz Buzz')
+    } else if (num % 3 === 0) {
+      output.push('Fizz')
+    } else if (num % 5 === 0) {
+      output.push('Buzz')
+    } else {
+      output.push(num);
+    }
+  });
+  return(output);
 };
 
 /* ------------------------------------------------------------------------------------------------
