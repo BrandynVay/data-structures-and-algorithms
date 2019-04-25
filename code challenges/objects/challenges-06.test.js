@@ -1,5 +1,7 @@
 'use strict';
 
+import { objectExpression } from "@babel/types";
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -14,8 +16,7 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getCourseKeys = (obj) => {
   // Solution code here...
-  obj.keys(courseInfo);
-  return obj;
+  return Object.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,6 +74,9 @@ let characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  Object.values(arr).forEach( (person) => {
+    houses.push(person.house)
+  })
   return houses;
 };
 
@@ -90,6 +94,17 @@ hasChildrenValues(characters, 'Eddard') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  let target = 0;
+  arr.forEach( (person) => {
+    if (person.name === character)
+      target = person;
+  })
+  let stripped = Object.values(target);
+  if (stripped[2].length > 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -102,8 +117,17 @@ The input and output of this function are the same as the input and output from 
 
 const hasChildrenEntries = (arr, character) => {
   // Solution code here...
-};
-
+  let result = false;
+  for (let i = 0; i < arr.length; i++){
+  if (Object.entries(character[0])[0][1]){
+    result = true;
+  }
+  if (Object.entries(character[6])[0][1]) {
+    return true
+  }
+  return result;
+}
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -165,11 +189,11 @@ Run your tests from the console: jest challenges-06.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe('Testing challenge 1', () => {
-  test('It should return the keys from an object', () => {
-    expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
-  });
-});
+// describe('Testing challenge 1', () => {
+//   test('It should return the keys from an object', () => {
+//     expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
+//   });
+// });
 
 // describe('Testing challenge 2', () => {
 //   test('It should return an array of the names of the houses', () => {
@@ -188,15 +212,15 @@ describe('Testing challenge 1', () => {
 //   });
 // });
 
-// describe('Testing challenge 4', () => {
-//   test('It should return true for characters that have children', () => {
-//     expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
-//   });
+describe('Testing challenge 4', () => {
+  test('It should return true for characters that have children', () => {
+    expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
+  });
 
-//   test('It should return false to characters who do not have children', () => {
-//     expect(hasChildrenEntries(characters, 'Jon S.')).toBeFalsy();
-//   });
-// });
+  test('It should return false to characters who do not have children', () => {
+    expect(hasChildrenEntries(characters, 'Jon S.')).toBeFalsy();
+  });
+});
 
 // describe('Testing challenge 5', () => {
 //   test('It should return the number of characters in the array', () => {
@@ -216,4 +240,3 @@ describe('Testing challenge 1', () => {
 //     expect(houseSurvivors(characters)).toStrictEqual([ { house: 'Stark', members: 6 }, { house: 'Arryn', members: 2 }, { house: 'Lannister', members: 4 }, { house: 'Targaryen', members: 4 }, { house: 'Tyrell', members: 3 }, { house: 'Stark', members: 2 }, { house: 'Snow', members: 1 } ]);
 //   });
 // });
-
