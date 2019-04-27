@@ -1,6 +1,4 @@
-'use strict';
-
-import { objectExpression } from "@babel/types";
+'use strict'
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
