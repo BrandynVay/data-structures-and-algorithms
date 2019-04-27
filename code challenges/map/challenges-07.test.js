@@ -16,7 +16,7 @@ const forLoopTwoToThe = (arr) => {
   // Solution code here...\
   let result = [];
   for (let i = 0; i < arr.length; i++){
-    result.push(Math.pow(2,arr[i]))
+    result.push(Math.pow(2,arr[i]));
   }
   return result;
 };
@@ -31,7 +31,7 @@ const forEachTwoToThe = (arr) => {
   // Solution code here...
   let result = [];
   arr.forEach( (math) => {
-    result.push(Math.pow(2,math))
+    result.push(Math.pow(2,math));
   })
   return result;
 };
@@ -76,12 +76,12 @@ const evenOdd = (arr) => {
   // Solution code here...
   let newArr = arr.map(element => {
     if(typeof element === 'number'){
-      return ((element % 2) === 0 ? 'even' : 'odd')
+      return ((element % 2) === 0 ? 'even' : 'odd');
+    } else{
+      return 'N/A';
     }
-    else{return 'N/A'}
   })
-  return newArr
-
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ const snorlaxAbilities = {
 
 const extractAbilities = (arr) => {
   // Solution code here...
-  return arr.map(element => element.ability.name)
+  return arr.map(element => element.ability.name);
 };
 
 /* ------------------------------------------------------------------------------------------------
