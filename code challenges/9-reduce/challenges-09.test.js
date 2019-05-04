@@ -8,9 +8,11 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-const countNumberOfElements = (arr) => {
+const countNumberOfElements = (arr) => arr.reduce( (elements) => {
   // Solution code here...
-};
+  elements += 1;
+  return elements;
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -68,9 +70,11 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-const returnNames = (arr) => {
+const returnNames = (arr) => arr.reduce( (elements, value) => {
   // Solution code here...
-};
+  elements.push(value.name);
+  return elements;
+}, []);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -82,6 +86,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (arr) => {
   // Solution code here...
+  const result = arr.split('').reduce( (elements, value) => {
+    elements.unshift(value);
+    return elements;
+  }, []).join('');
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,9 +142,13 @@ const characters = [
   },
 ];
 
-const countNumberOfChildren = (arr) => {
+const countNumberOfChildren = (arr) => arr.reduce( (elements,value) =>{
   // Solution code here...
-};
+  if(value.children) {
+    elements += value.children.length;
+  }
+  return elements;
+}, 0);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -147,6 +160,14 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 
 const calculateAverage = (arr) => {
   // Solution code here...
+  return arr.reduce( (elements,value, index)=> {
+    elements += value
+    if(arr.length === index +1) {
+      return elements / arr.length;
+    } else  {
+      return elements;
+    }
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -166,10 +187,13 @@ const isPrime = (value) => {
   return value > 1;
 };
 
-const countPrimeNumbers = (arr) => {
+const countPrimeNumbers = (arr) => arr.reduce((elements,value) =>{
   // Solution code here...
-};
-
+  if(isPrime(value)) {
+    elements++;
+  }
+  return elements;
+}, 0);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
