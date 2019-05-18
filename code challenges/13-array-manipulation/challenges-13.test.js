@@ -39,12 +39,10 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  let output = '';
-  for(let i= 1; i< str.length; i  +=2){
-  output += str.charAt(i);
-}
-  return output;
-}
+
+  return str.split('').filter( (element, index) => index % 2 === 1).join('');
+
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
