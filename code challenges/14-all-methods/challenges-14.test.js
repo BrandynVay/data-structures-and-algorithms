@@ -8,9 +8,7 @@ Write a function named toTitleCase that takes in an array of strings and returns
 For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyver'].
 ------------------------------------------------------------------------------------------------ */
 
-const toTitleCase = (arr) => {
-  // Solution code here...
-};
+const toTitleCase = (arr) => arr.map(string => string.charAt(0).toUpperCase() + string.substring(1, string.length));
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -83,9 +81,7 @@ let starWarsData = [{
   gender: 'n/a'
 }];
 
-let biggerThanLuke = (arr) => {
-  // Solution code here...
-};
+let biggerThanLuke = (arr) => arr.filter(character => character.mass > 77).map(character => character.name).join(' - ');
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -101,9 +97,13 @@ Here is an example of the input:
 This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
-const sortBy = (property, arr) => {
-  // Solution code here...
-};
+const sortBy = (property, arr) => arr.sort((a, b) => {
+  if (a[property] > b[property]) {
+    return 1;
+  } else { 
+    return -1; 
+  }
+})
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -118,8 +118,12 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
-// Solution code here...
-};
+  if (url.match(/https\:\/\//)) {
+     return true;
+    } else { 
+      return false; 
+    }
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
