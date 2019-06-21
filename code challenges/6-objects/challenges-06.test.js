@@ -114,18 +114,14 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
-  // Solution code here...
   let result = false;
-  for (let i = 0; i < arr.length; i++){
-  if (Object.entries(character[0])[0][1]){
-    result = true;
-  }
-  if (Object.entries(character[6])[0][1]) {
-    return true
-  }
-  return result;
-}
-}
+  for(let i =0; i < arr.length; i++){
+    if(Object.entries(arr[i])[0][1] === character){
+      if(Object.entries(arr[i])[2][1].length){result = true}
+        }
+    }
+  return result
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -133,7 +129,13 @@ Write a function named totalCharacters that takes in an array and returns the nu
 ------------------------------------------------------------------------------------------------ */
 
 const totalCharacters = (arr) => {
-  // Solution code here...
+  let result = 0;
+  arr.forEach(element => {
+    if(Object.values(element)[0]){result++}
+    if(Object.values(element)[1]){result++}
+    if(Object.values(element)[2]){result += Object.values(element)[2].length}
+  })
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
