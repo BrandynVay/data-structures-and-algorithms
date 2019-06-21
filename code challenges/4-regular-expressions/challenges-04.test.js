@@ -13,7 +13,7 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
-  if (input.match(/[0-9]/g)) {
+  if (input.toString().match(/[0-9]/g)) {
     return true;
   } else {
     return false;
