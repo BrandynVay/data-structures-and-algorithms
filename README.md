@@ -10,4 +10,4 @@
 ### Approach & Efficiency
 
 ### Solution
-![Code Challenge 6](Code-Challenge.png)
+![Code Challenge 6](./whiteboard-img/Code-Challenge.png)
