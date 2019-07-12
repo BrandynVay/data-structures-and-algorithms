@@ -1,6 +1,9 @@
-#Table of Contents
+# Table of Contents
+
 1. [Code Challenge 06](#Code-Challenge-06)
 2. [Code Challenge 07](#Code-Challenge-07)
+
+---
 
 # Code Challenge 06
 
