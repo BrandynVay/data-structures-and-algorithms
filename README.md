@@ -20,7 +20,7 @@
 ### Approach & Efficiency
 
 ### Solution
-![Code Challenge 6](./assets/whiteboard-img/Code-Challenge-6.JPG)
+![Code Challenge 6](./assets/whiteboard-img/Code-Challenge-06.JPG)
 
 ---
 
@@ -34,4 +34,4 @@
 ### Approach & Efficiency
 
 ### Solution
-![Code Challenge 7](./assets/whiteboard-img/Code-Challenge-7.JPG)
+![Code Challenge 7](./assets/whiteboard-img/Code-Challenge-07.jpeg)
