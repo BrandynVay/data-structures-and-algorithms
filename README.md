@@ -35,3 +35,17 @@
 
 ### Solution
 ![Code Challenge 7](./assets/whiteboard-img/Code-Challenge-07.jpeg)
+
+---
+
+# Code Challenge 08
+
+## Authors: Brad Smialek & Brandyn Vay
+
+### Challenge
+* merge two linked list into one.
+
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 8](./assets/whiteboard-img/Code-Challenge-08.JPG)
