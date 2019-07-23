@@ -6,7 +6,8 @@
   * [link list kth](https://github.com/KlNGU/data-structures-and-algorithms/tree/master/code%20challenges/Data-Structures/linked-list)
 3. [Code Challenge 08](#Code-Challenge-08)
   * [merge link lists](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/Data-Structures/ll-merge/ll-merge.js)
-4. [Code Challenge 09]()
+4. [Code Challenge 11]()
+  * [queue with stacks](#Code-Challenge-11)
 
 
 ---
@@ -52,3 +53,17 @@
 
 ### Solution
 ![Code Challenge 8](./assets/whiteboard-img/Code-Challenge-08.JPG)
+
+---
+
+# Code Challenge 11
+
+## Authors: Brandyn Vay, Jonny Graybill, and Jeremy Lee
+
+## Challenge
+  * take two stacks and use queue implementation
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 11](./assets/whiteboard-img/Code-Challenge-011.JPG)
