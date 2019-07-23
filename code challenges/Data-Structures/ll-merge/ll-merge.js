@@ -1,5 +1,6 @@
 'use strict';
 
+// Need to still write tests
 // Paired Programed with Brad Smialek
 const ll = require('../linked-list/linked-list.js');
 
@@ -25,3 +26,5 @@ function mergeLists(l1, l2){
   }
   return zipList.head;
 }
+
+// testing random thing

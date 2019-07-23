@@ -7,6 +7,7 @@
 3. [Code Challenge 08](#Code-Challenge-08)
   * [merge link lists](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/Data-Structures/ll-merge/ll-merge.js)
 
+
 ---
 
 # Code Challenge 06
