@@ -66,4 +66,4 @@
 ### Approach & Efficiency
 
 ### Solution
-![Code Challenge 11](./assets/whiteboard-img/Code-Challenge-011.JPG)
+![Code Challenge 11](./assets/whiteboard-img/code-challenge-011.jpeg)
