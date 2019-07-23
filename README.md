@@ -6,8 +6,8 @@
   * [link list kth](https://github.com/KlNGU/data-structures-and-algorithms/tree/master/code%20challenges/Data-Structures/linked-list)
 3. [Code Challenge 08](#Code-Challenge-08)
   * [merge link lists](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/Data-Structures/ll-merge/ll-merge.js)
-4. [Code Challenge 11]()
-  * [queue with stacks](#Code-Challenge-11)
+4. [Code Challenge 11](#Code-Challenge-11)
+  * [queue with stacks](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/queueWithStacks/queue-with-stacks.js)
 
 
 ---
