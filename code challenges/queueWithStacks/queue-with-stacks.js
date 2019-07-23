@@ -1,14 +1,13 @@
 'use strict';
 
 class Node {
-
-  constructor(value) {
+  constructor (value) {
     this.value = value;
     this.next = null;
   }
 }
 
-class Stack {
+class PseudoQueue {
 
   constructor() {
     this.first = null;
@@ -33,7 +32,7 @@ class Stack {
       return null;
     }
     let node = this.first
-    if(node.next) {
+    if(!node.next) {
       node = node.next;
       this.first = node;
     } else {
@@ -44,13 +43,11 @@ class Stack {
   }
 }
 
-let myStack = new Stack();
-myStack.enqueue(1);
-myStack.enqueue(2);
-myStack.enqueue(3);
-myStack.dequeue();
+let myQueue = new PseudoQueue();
+myQueue.enqueue(1);
+myQueue.enqueue(2);
+myQueue.enqueue(3);
+myQueue.dequeue();
 
-console.log(myStack);
-console.log(myStack.dequeue());
-
-module.exports = Stack;
+console.log(myQueue);
+console.log(myQueue.dequeue());
