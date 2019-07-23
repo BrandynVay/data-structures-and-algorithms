@@ -33,7 +33,7 @@ class Stack {
       return null;
     }
     let node = this.first
-    if(!node.next) {
+    if(node.next) {
       node = node.next;
       this.first = node;
     } else {
@@ -52,3 +52,5 @@ myStack.dequeue();
 
 console.log(myStack);
 console.log(myStack.dequeue());
+
+module.exports = Stack;
