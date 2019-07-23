@@ -4,7 +4,7 @@
   * [link list insertions](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/Data-Structures/linked-list/linked-list.js)
 2. [Code Challenge 07](#Code-Challenge-07)
   * [link list kth](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/Data-Structures/linked-list/linked-list.js)
-3. [Code Challenge 08](#Code-Challenge_08)
+3. [Code Challenge 08](#Code-Challenge-08)
 
 ---
 
