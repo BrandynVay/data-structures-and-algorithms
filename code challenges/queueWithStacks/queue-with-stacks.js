@@ -1,53 +1,75 @@
 'use strict';
 
 class Node {
-  constructor (value) {
+  constructor(value) {
     this.value = value;
     this.next = null;
   }
-}
-
-class PseudoQueue {
-
+ }
+ 
+ class Stack {
   constructor() {
-    this.first = null;
-    this.last = null;
+    this.head = null;
+    this.tail = null;
     this.size = 0;
   }
-
-  enqueue(value) {
-    let node = new Node(value);
-    if(!this.first) {
-      this.first = node;
-      this.last = node;
+ 
+ 
+  push(value) {
+    let node = new Node(value)
+    if(!this.head){
+      this.head = node;
+      this.tail = node;
     } else {
-      node.next = this.first;
-      this.first = node;
+      node.next = this.head;
+      this.head = node;
     }
-    this.size++;
   }
-
-  dequeue() {
-    if(!this.first) { 
+ 
+  pop() {
+    if(!this.head){
       return null;
-    }
-    let node = this.first
-    if(!node.next) {
-      node = node.next;
-      this.first = node;
     } else {
-      this.first = null;
-      this.last = null;
+      let node = this.head;
+      if(node.next) {
+        node = node.next;
+        this.head = node;
+      } else {
+        this.head = null;
+        this.tail = null;
+      }
+      this.size--;
     }
-    this.size--;
   }
-}
-
-let myQueue = new PseudoQueue();
-myQueue.enqueue(1);
-myQueue.enqueue(2);
-myQueue.enqueue(3);
-myQueue.dequeue();
-
-console.log(myQueue);
-console.log(myQueue.dequeue());
+ 
+  enqueue(value){
+    let node = new Node(value)
+    if(!this.head){
+      this.head = node;
+      this.tail = node;
+    }
+    while (stack1 !== null) {
+      stack2.push(stack1.pop())
+    }
+    stack1.push(value);
+    while (stack2 !== null) {
+      stack1.push(stack2.pop());
+    }
+  }
+ 
+ 
+ }
+ 
+ let stack1 = new Stack();
+ let stack2 = new Stack();
+ 
+ // stack1.enqueue(5);
+ // stack1.enqueue(10);
+ 
+ 
+ 
+ const myQueue = new Stack();
+ myQueue.enqueue(1);
+ myQueue.enqueue(2);
+ myQueue.enqueue(3);
+ console.log(myQueue);
