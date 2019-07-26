@@ -8,6 +8,8 @@
   * [merge link lists](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/Data-Structures/ll-merge/ll-merge.js)
 4. [Code Challenge 11](#Code-Challenge-11)
   * [queue with stacks](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/queueWithStacks/queue-with-stacks.js)
+5. [Code Challenge 12](#Code-Challenge-12)
+  * [fifo animal shelter](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
 
 
 ---
@@ -67,3 +69,17 @@
 
 ### Solution
 ![Code Challenge 11](./assets/whiteboard-img/code-challenge-11.jpeg)
+
+---
+
+# Code Challenge 12
+
+## Authors: Brandyn Vay, Brad Smialek
+
+## Challenge
+  * Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 12](./assets/whiteboard-img/code-challenge-12.jpeg)
