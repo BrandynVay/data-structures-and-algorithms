@@ -10,6 +10,8 @@
   * [queue with stacks](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/queueWithStacks/queue-with-stacks.js)
 5. [Code Challenge 12](#Code-Challenge-12)
   * [fifo animal shelter](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
+6. [Code Challenge 13](#Code-Challenge-13)
+  * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
 
 
 ---
@@ -83,3 +85,17 @@
 
 ### Solution
 ![Code Challenge 12](./assets/whiteboard-img/code-challenge-12.jpeg)
+
+---
+
+# Code Challenge 13
+
+## Authors: Brandyn Vay, Brad Smialek
+
+## Challenge
+  * Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 13](./assets/whiteboard-img/code-challenge-13.jpeg)
