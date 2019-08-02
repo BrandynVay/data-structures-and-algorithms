@@ -11,7 +11,7 @@
 5. [Code Challenge 12](#Code-Challenge-12)
   * [fifo animal shelter](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
 6. [Code Challenge 13](#Code-Challenge-13)
-  * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
+  * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/multiBracketValidation/multi-bracket-validation.js)
 
 
 ---
