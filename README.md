@@ -18,7 +18,7 @@
 
 ---
 
-# Code Challenges
+# `Code Challenges`
 
 # Code Challenge 06
 
@@ -106,7 +106,7 @@
 
 ---
 
-# DSA Implamentation
+# `DSA Implamentation`
 
 # Trees
 
