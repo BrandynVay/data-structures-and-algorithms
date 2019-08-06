@@ -1,5 +1,5 @@
 # Table of Contents
-
+## Code Challenges
 1. [Code Challenge 06](#Code-Challenge-06)
   * [link list insertions](https://github.com/KlNGU/data-structures-and-algorithms/tree/master/code%20challenges/Data-Structures/linked-list)
 2. [Code Challenge 07](#Code-Challenge-07)
@@ -12,7 +12,9 @@
   * [fifo animal shelter](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
 6. [Code Challenge 13](#Code-Challenge-13)
   * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/multiBracketValidation/multi-bracket-validation.js)
-
+## DSA Implementation
+1. [Trees](#trees)
+  * [trees code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
 
 ---
 
@@ -99,3 +101,21 @@
 
 ### Solution
 ![Code Challenge 13](./assets/whiteboard-img/code-challenge-13.jpeg)
+
+---
+
+# Trees
+
+## Challenge
+create a binary tree and a binary search tree
+
+## Approach & Efficiency
+
+## API
+1. Binary Tree
+  * `preOrder()`
+  * `postOrder()`
+  * `inOrder()`
+2. Binary Search Tree
+  * `add`
+  * `contains`
