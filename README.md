@@ -12,6 +12,8 @@
   * [fifo animal shelter](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/fifoAnimalShelter/fifo-animal-shelter.js)
 6. [Code Challenge 13](#Code-Challenge-13)
   * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/multiBracketValidation/multi-bracket-validation.js)
+7. [Code Challenge 16](#Code-Challenge-16)
+  * [fizz buzz tree]()
 ## DSA Implementation
 1. [Trees](#trees)
   * [trees code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
@@ -103,6 +105,20 @@
 
 ### Solution
 ![Code Challenge 13](./assets/whiteboard-img/code-challenge-13.jpeg)
+
+---
+
+# Code Challenge 16
+
+## Authors: Brandyn Vay, Brad Smialek
+
+## Challenge
+  * Conduct “FizzBuzz” on a tree while traversing through it. Change the values of each of the nodes dependent on the current node’s value.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 16](./assets/whiteboard-img/code-challenge-16.jpeg)
 
 ---
 
