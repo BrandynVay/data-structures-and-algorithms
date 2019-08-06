@@ -18,6 +18,8 @@
 
 ---
 
+# Code Challenges
+
 # Code Challenge 06
 
 ## Authors: Joseph Hangarter & Brandyn Vay
@@ -103,6 +105,8 @@
 ![Code Challenge 13](./assets/whiteboard-img/code-challenge-13.jpeg)
 
 ---
+
+# DSA Implamentation
 
 # Trees
 
