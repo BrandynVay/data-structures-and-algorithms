@@ -13,9 +13,10 @@
 6. [Code Challenge 13](#Code-Challenge-13)
   * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/multiBracketValidation/multi-bracket-validation.js)
 7. [Code Challenge 16](#Code-Challenge-16)
-  * [fizz buzz tree]()
-7. [Code Challenge 17](#Code-Challenge-17)
-  * [breadth fist]()
+  * [fizz buzz tree](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/fizzBuzzTree/fizz-buzz-tree.js)
+8. [Code Challenge 17](#Code-Challenge-17)
+  * [breadth fist](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
+
 ## DSA Implementation
 1. [Trees](#trees)
   * [trees code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
