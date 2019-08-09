@@ -14,6 +14,9 @@
   * [multi braket validation](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/code%20challenges/multiBracketValidation/multi-bracket-validation.js)
 7. [Code Challenge 16](#Code-Challenge-16)
   * [fizz buzz tree](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/fizzBuzzTree/fizz-buzz-tree.js)
+8. [Code Challenge 17](#Code-Challenge-17)
+  * [breadth fist]()
+
 ## DSA Implementation
 1. [Trees](#trees)
   * [trees code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
@@ -119,6 +122,20 @@
 
 ### Solution
 ![Code Challenge 16](./assets/whiteboard-img/code-challenge-16.jpeg)
+
+---
+
+# Code Challenge 17
+
+## Authors: Brandyn Vay, Adrienne Easton
+
+## Challenge
+  * Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 17](./assets/whiteboard-img/code-challenge-17.jpeg)
 
 ---
 

@@ -1,7 +1,7 @@
 'use strict';
 
 class Node {
-  constructor (val){
+  constructor (val) {
     this.value = val;
     this.left = null;
     this.right = null;
@@ -9,7 +9,7 @@ class Node {
 }
 
 class BinaryTree {
-  constructor (root = null){
+  constructor (root = null) {
     this.root = root;
   }
 
@@ -17,20 +17,20 @@ class BinaryTree {
     let results = [];
     let _walk = (node) => {
       results.push(node.value);
-      if(node.left) {_walk(node.left); }
-      if(node.right) {_walk(node.right); }
+      if (node.left) { _walk(node.left); }
+      if (node.right) { _walk(node.right); }
     };
     _walk(this.root);
     return results;
   }
 
-  postOrder(){
+  postOrder() {
     let results = [];
     let _walk = (node) => {
 
-      if(node.left) {_walk(node.left); }
+      if (node.left) { _walk(node.left); }
 
-      if(node.right) {_walk(node.right); }
+      if (node.right) { _walk(node.right); }
       results.push(node.value);
     };
     _walk(this.root);
@@ -41,11 +41,26 @@ class BinaryTree {
     let results = [];
     let _walk = (node) => {
 
-      if(node.left) {_walk(node.left); }
+      if (node.left) { _walk(node.left); }
       results.push(node.value);
-      if(node.right) {_walk(node.right); }
+      if (node.right) { _walk(node.right); }
     };
     _walk(this.root);
+    return results;
+  }
+
+  bredthFirst() {
+    let results = [];
+    let queue = [];
+
+    queue.push(this.root);
+
+    while(queue.length) {
+      let current = queue.shift();
+      results.push(current.value);
+      if (current.left) {queue.push(current.left)};
+      if (current.right) {queue.push(current.right)};
+    };
     return results;
   }
 
@@ -53,24 +68,36 @@ class BinaryTree {
 
 class BinarySearchTree {
   
+  constructor (root = null) {
+    this.root = root;
+  }
+
+  
+  
 }
 
-let ten = new Node(10);
-let four = new Node(4);
+let two = new Node(2);
 let seven = new Node(7);
+let five = new Node(5);
+let twoSquared = new Node(2);
+let six = new Node(6);
 let nine = new Node(9);
+let fiveSquared = new Node(5);
 let eleven = new Node(11);
-let twelve = new Node(12);
+let four = new Node(4);
 
-ten.left = seven;
-ten.right = twelve;
-seven.left = four;
-seven.right = eleven;
-twelve.left = eleven;
-twelve.right = nine;
+two.left = seven;
+two.right = five;
+seven.left = twoSquared;
+seven.right = six;
+five.right = nine;
+six.left = fiveSquared;
+six.right = eleven;
+nine.right = four;
 
-let tree = new BinaryTree(ten);
+let tree = new BinaryTree(two);
 console.log(tree);
-console.log('tree preOrder :',tree.preOrder());
-console.log('tree postOrder :',tree.postOrder());
-console.log('tree inOrder :',tree.inOrder());
+console.log('tree preOrder :', tree.preOrder());
+console.log('tree postOrder :', tree.postOrder());
+console.log('tree inOrder :', tree.inOrder());
+console.log('Breadth First :', tree.bredthFirst());
