@@ -104,10 +104,8 @@ class BinarySearchTree {
 // let two = new Node(2);
 // let seven = new Node(7);
 // let five = new Node(5);
-// let twoSquared = new Node(2);
 // let six = new Node(6);
 // let nine = new Node(9);
-// let fiveSquared = new Node(5);
 // let eleven = new Node(11);
 // let four = new Node(4);
 
@@ -127,4 +125,4 @@ class BinarySearchTree {
 // console.log('tree inOrder :', tree.inOrder());
 // console.log('Breadth First :', tree.breadthFirst());
 
-module.exports =  { BinaryTree, Node };
+module.exports =  { BinaryTree, Nodes };
