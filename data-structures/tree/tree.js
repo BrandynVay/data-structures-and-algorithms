@@ -9,8 +9,9 @@ class Node {
 }
 
 class BinaryTree {
-  constructor (root = null) {
-    this.root = root;
+
+  constructor() {
+    this.root = null;
   }
 
   preOrder() {
@@ -29,7 +30,6 @@ class BinaryTree {
     let _walk = (node) => {
 
       if (node.left) { _walk(node.left); }
-
       if (node.right) { _walk(node.right); }
       results.push(node.value);
     };
@@ -49,7 +49,7 @@ class BinaryTree {
     return results;
   }
 
-  bredthFirst() {
+  breadthFirst() {
     let results = [];
     let queue = [];
 
@@ -67,50 +67,64 @@ class BinaryTree {
 }
 
 class BinarySearchTree {
-  
+
   constructor (root = null) {
     this.root = root;
   }
 
+  add(value) {
+    let current = this.root;
+    if(!current){this.root = new Node(value)};
+    while (current) {
+      if (current.val > value) {
+        if (!current.left) {
+          current.left = new Node(value);
+          break;
+        }
+        else{current = current.left};
+      }
+
+      if (current.val < value) {
+        if (!current.right) {
+          current.right = new Node(value);
+          break;
+        }
+        else{ current = current.right};
+      }
+    }
+    return this;
+  }
+
+  contains(value){
+    return this.preOrder().includes(value);
+  }
 
 }
 
-let two = new Node(2);
-let seven = new Node(7);
-let five = new Node(5);
-let twoSquared = new Node(2);
-let six = new Node(6);
-let nine = new Node(9);
-let fiveSquared = new Node(5);
-let eleven = new Node(11);
-let four = new Node(4);
+// let two = new Node(2);
+// let seven = new Node(7);
+// let five = new Node(5);
+// let twoSquared = new Node(2);
+// let six = new Node(6);
+// let nine = new Node(9);
+// let fiveSquared = new Node(5);
+// let eleven = new Node(11);
+// let four = new Node(4);
 
-two.left = seven;
-two.right = five;
-seven.left = twoSquared;
-seven.right = six;
-five.right = nine;
-six.left = fiveSquared;
-six.right = eleven;
-nine.right = four;
+// two.left = seven;
+// two.right = five;
+// seven.left = twoSquared;
+// seven.right = six;
+// five.right = nine;
+// six.left = fiveSquared;
+// six.right = eleven;
+// nine.right = four;
 
-let tree = new BinaryTree(two);
-console.log(tree);
-console.log('tree preOrder :', tree.preOrder());
-console.log('tree postOrder :', tree.postOrder());
-console.log('tree inOrder :', tree.inOrder());
-console.log('Breadth First :', tree.bredthFirst());
+// let tree = new BinaryTree(two);
+// console.log(tree);
+// console.log('tree preOrder :', tree.preOrder());
+// console.log('tree postOrder :', tree.postOrder());
+// console.log('tree inOrder :', tree.inOrder());
+// console.log('Breadth First :', tree.breadthFirst());
 
-it('can successfully return a collection from a breadth-first traversal', () => {
-  let tree = new BinaryTree(2);
-  tree.add(7);
-  tree.add(5);
-  tree.add(2);
-  tree.add(6);
-  tree.add(9);
-  tree.add(5);
-  tree.add(11);
-  tree.add(4);
-  let treeArray = tree.breadthFirst();
-  expect(treeArray).toEqual([2, 7, 5, 2, 6, 9, 5, 11, 4]);
-});
+module.exports =  { BinaryTree, Node };
