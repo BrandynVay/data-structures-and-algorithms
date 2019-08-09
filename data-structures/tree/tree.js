@@ -72,8 +72,7 @@ class BinarySearchTree {
     this.root = root;
   }
 
-  
-  
+
 }
 
 let two = new Node(2);
@@ -101,3 +100,17 @@ console.log('tree preOrder :', tree.preOrder());
 console.log('tree postOrder :', tree.postOrder());
 console.log('tree inOrder :', tree.inOrder());
 console.log('Breadth First :', tree.bredthFirst());
+
+it('can successfully return a collection from a breadth-first traversal', () => {
+  let tree = new BinaryTree(2);
+  tree.add(7);
+  tree.add(5);
+  tree.add(2);
+  tree.add(6);
+  tree.add(9);
+  tree.add(5);
+  tree.add(11);
+  tree.add(4);
+  let treeArray = tree.breadthFirst();
+  expect(treeArray).toEqual([2, 7, 5, 2, 6, 9, 5, 11, 4]);
+});
