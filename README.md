@@ -15,7 +15,7 @@
 7. [Code Challenge 16](#Code-Challenge-16)
   * [fizz buzz tree](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/fizzBuzzTree/fizz-buzz-tree.js)
 8. [Code Challenge 17](#Code-Challenge-17)
-  * [breadth fist]()
+  * [breadth fist](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
 
 ## DSA Implementation
 1. [Trees](#trees)
