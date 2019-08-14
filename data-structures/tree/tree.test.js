@@ -95,4 +95,18 @@ describe('Tree tests', () => {
     expect(tree.breadthFirst([2, 7, 5, 2, 6, 9, 5, 11, 4])).tobe
   });
 
+  it('can successfully return value of the maximum node value', () => {
+    let tree = new BT();
+    tree.root = two;
+    tree.root.right = five;
+    tree.root.left = seven;
+    tree.root.left = two;
+    tree.root.right = six;
+    tree.root.right = nine;
+    tree.root.left = five;
+    tree.root.right = eleven;
+    tree.root.left = four;
+    expect(tree.findMaxValue([11])).tobe
+  });
+
 })
