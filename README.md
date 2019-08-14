@@ -16,6 +16,8 @@
   * [fizz buzz tree](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/fizzBuzzTree/fizz-buzz-tree.js)
 8. [Code Challenge 17](#Code-Challenge-17)
   * [breadth fist](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
+9. [Code Challenge 18](#Code-Challenge-18)
+  * [find maximum binary tree]()
 
 ## DSA Implementation
 1. [Trees](#trees)
@@ -136,6 +138,20 @@
 
 ### Solution
 ![Code Challenge 17](./assets/whiteboard-img/code-challenge-17.jpeg)
+
+---
+
+# Code Challenge 18
+
+## Authors: Brandyn Vay, Adrienne Easton
+
+## Challenge
+  * Write a function called `find-maximum-value` which takes binary tree as its only input. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 18](./assets/whiteboard-img/code-challenge-18.jpeg)
 
 ---
 

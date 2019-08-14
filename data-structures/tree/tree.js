@@ -14,6 +14,10 @@ class BinaryTree {
     this.root = null;
   }
 
+  insert(val) {
+
+  }
+
   preOrder() {
     let results = [];
     let _walk = (node) => {
@@ -64,6 +68,17 @@ class BinaryTree {
     return results;
   }
 
+  findMaxValue() {
+    if (this.root === null) {
+      throw "Empty tree!";
+    }
+    let currNode = this.root;
+    while (currNode.right !== null) {
+       currNode = currNode.right;
+    }
+    return currNode.value;
+  }
+
 }
 
 class BinarySearchTree {
@@ -98,31 +113,32 @@ class BinarySearchTree {
   contains(value){
     return this.preOrder().includes(value);
   }
-
 }
 
-// let two = new Node(2);
-// let seven = new Node(7);
-// let five = new Node(5);
-// let six = new Node(6);
-// let nine = new Node(9);
-// let eleven = new Node(11);
-// let four = new Node(4);
 
-// two.left = seven;
-// two.right = five;
-// seven.left = twoSquared;
-// seven.right = six;
-// five.right = nine;
-// six.left = fiveSquared;
-// six.right = eleven;
-// nine.right = four;
+let ten = new Node(10);
+let four = new Node(4);
+let seven = new Node(7);
+let eleven = new Node(11);
+let nine = new Node(9);
+let fifteen = new Node(15);
+let twelve = new Node(12);
 
-// let tree = new BinaryTree(two);
-// console.log(tree);
+let tree = new BinaryTree();
+
+tree.root = ten;
+ten.left = seven;
+ten.right = twelve;
+seven.left = four;
+seven.right = nine;
+twelve.left = eleven;
+twelve.right = fifteen;
+
+console.log(tree);
+console.log('tree max value:', tree.findMaxValue());
 // console.log('tree preOrder :', tree.preOrder());
 // console.log('tree postOrder :', tree.postOrder());
 // console.log('tree inOrder :', tree.inOrder());
 // console.log('Breadth First :', tree.breadthFirst());
 
-module.exports =  { BinaryTree, Nodes };
+module.exports =  { BinaryTree, Node };
