@@ -57,6 +57,8 @@
 ### Solution
 ![Code Challenge 7](./assets/whiteboard-img/Code-Challenge-07.jpeg)
 
+[back to the top](#Table-of-Contents)
+
 ---
 
 # Code Challenge 08
@@ -70,6 +72,8 @@
 
 ### Solution
 ![Code Challenge 8](./assets/whiteboard-img/Code-Challenge-08.JPG)
+
+[back to the top](#Table-of-Contents)
 
 ---
 
@@ -85,6 +89,8 @@
 ### Solution
 ![Code Challenge 11](./assets/whiteboard-img/code-challenge-11.jpeg)
 
+[back to the top](#Table-of-Contents)
+
 ---
 
 # Code Challenge 12
@@ -98,6 +104,8 @@
 
 ### Solution
 ![Code Challenge 12](./assets/whiteboard-img/code-challenge-12.jpeg)
+
+[back to the top](#Table-of-Contents)v
 
 ---
 
@@ -113,6 +121,8 @@
 ### Solution
 ![Code Challenge 13](./assets/whiteboard-img/code-challenge-13.jpeg)
 
+[back to the top](#Table-of-Contents)
+
 ---
 
 # Code Challenge 16
@@ -126,6 +136,8 @@
 
 ### Solution
 ![Code Challenge 16](./assets/whiteboard-img/code-challenge-16.jpeg)
+
+[back to the top](#Table-of-Contents)
 
 ---
 
@@ -141,6 +153,8 @@
 ### Solution
 ![Code Challenge 17](./assets/whiteboard-img/code-challenge-17.jpeg)
 
+[back to the top](#Table-of-Contents)
+
 ---
 
 # Code Challenge 18
@@ -154,6 +168,8 @@
 
 ### Solution
 ![Code Challenge 18](./assets/whiteboard-img/code-challenge-18.jpeg)
+
+[back to the top](#Table-of-Contents)
 
 ---
 
@@ -174,3 +190,6 @@ create a binary tree and a binary search tree
 2. Binary Search Tree
   * `add`
   * `contains`
+  
+  [back to the top](#Table-of-Contents)
+  
