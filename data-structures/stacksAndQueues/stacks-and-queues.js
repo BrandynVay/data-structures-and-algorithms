@@ -1,56 +1,76 @@
-'use strict';
+'use strict'
 
 class Node {
-
-  constructor(value) {
+  constructor(value, next = null, previous = null) {
     this.value = value;
-    this.next = null;
-  }
-}
+    this.next = next;
+    this.previous = previous;
+  };
+};
 
 class Stack {
-
   constructor() {
-    this.first = null;
-    this.last = null;
-    this.size = 0;
-  }
+    this.top = null;
+    this.bottom = null;
+  };
 
-  enqueue(value) {
-    let node = new Node(value);
-    if(!this.first) {
-      this.first = node;
-      this.last = node;
-    } else {
-      node.next = this.first;
-      this.first = node;
+  push(value) {
+    this.top = new Node(value, this.top);
+  };
+
+  pop() {
+    //assign temp value;
+    let temp = this.top;
+    //reassign top to top.next
+    this.top = this.top.next;
+    //set old top.next = null;
+    temp.next = null;
+    //return this.top.value
+    return temp.value;
+  };
+
+  peek() {
+    if(this.top){
+    return this.top.value;
     }
-    this.size++;
-  }
+    else{return null}
+  };
+};
+
+class Queue {
+  constructor() {
+    this.front = null;
+    this.rear = null;
+  };
+  
+  enqueue(value) {
+    let newNode = new Node(value);
+    if(this.rear){this.rear.previous = newNode;}
+    this.rear = newNode;
+    if(!this.front){this.front = newNode;}
+  };
 
   dequeue() {
-    if(!this.first) { 
-      return null;
-    }
-    let node = this.first
-    if(node.next) {
-      node = node.next;
-      this.first = node;
-    } else {
-      this.first = null;
-      this.last = null;
-    }
-    this.size--;
+    let oldFront = this.front;
+    if(this.front){this.front = this.front.previous};
+    if(oldFront){oldFront.previous = null;}
+    return oldFront ? oldFront.value : null;
+  };
+
+  peek() {
+    return this.front ? this.front.value : null;
+  };
+
+  // this is a utility function for testing, not for Datastructure use
+  showQueue() {
+    let que = [];
+    let current = this.front;
+    while (current) {
+      que.push(current.value);
+      current = current.previous
+    };
+    return que;
   }
-}
+};
 
-let myStack = new Stack();
-myStack.enqueue(1);
-myStack.enqueue(2);
-myStack.enqueue(3);
-myStack.dequeue();
-
-console.log(myStack);
-console.log(myStack.dequeue());
-
-module.exports = Stack;
+module.exports = {Stack, Queue};
