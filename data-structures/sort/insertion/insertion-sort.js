@@ -10,8 +10,6 @@
 //        j <-- j - 1
 //      arr[j + 1] <-- temp
 
-let arr = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
-
 function insertionSort(arr) {
   for(let i = 1; i < arr.length; i++) {
     let temp = arr[i];
@@ -24,7 +22,5 @@ function insertionSort(arr) {
   }
   return arr;
 }
-
-console.log(insertionSort(arr)); // => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 
 module.exports = insertionSort;
