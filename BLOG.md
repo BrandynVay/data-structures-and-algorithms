@@ -2,7 +2,9 @@
 1. [Insertion Sort](##Insertion-Sort)
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/insertion/insertion-sort.js)
 2. [Merge Sort](##Merge-Sort)
-  * [Code]()
+  * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/merge/merge-sort.js)
+
+---
 
 ## Insertion Sort
 
@@ -36,6 +38,8 @@ InsertionSort(int[] arr)
 **Video**
 
 * [Insertion Sort Video](youtube.com/watch?v=OGzPmgsI-pQ)
+
+[back to the top](#Table-of-Contents)
 
 ---
 
@@ -95,3 +99,9 @@ ALGORITHM Merge(left, right, arr)
 
 #### Video
 * [Merge Sort Video](youtube.com/watch?v=KF2j-9iSf4Q&index=27&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
+
+[back to the top](#Table-of-Contents)
+
+---
+
+
