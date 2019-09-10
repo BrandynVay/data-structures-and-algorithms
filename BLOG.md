@@ -1,12 +1,12 @@
 # Table of Contents
-1. [Insertion Sort](##Insertion-Sort)
+1. [Insertion Sort](#Insertion-Sort)
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/insertion/insertion-sort.js)
-2. [Merge Sort](##Merge-Sort)
+2. [Merge Sort](#Merge-Sort)
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/merge/merge-sort.js)
 
 ---
 
-## Insertion Sort
+# Insertion Sort
 
 Insertion sort is an idea that one element from the input elements is consumed in each iteration to find its correct position. The reason this is usful is because if we are given an array of random numbers and we need to put the numbers in numeric order within the array.
 
@@ -43,7 +43,7 @@ InsertionSort(int[] arr)
 
 ---
 
-## Merge Sort
+# Merge Sort
 Merge sort will divide the bigger problem into smaller problems and then solve each of the small problems in order to solve the bigger problem that we started out with.
 
 The merge sort algorithem is one of the best options because of how fast it is.
