@@ -1,7 +1,7 @@
 # Table of Contents
-1. [Insertion Sort](##Insertion-Sort)
+1. [Insertion Sort](## Insertion-Sort)
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/insertion/insertion-sort.js)
-2. [Merge Sort](##Merge-Sort)
+2. [Merge Sort](## Merge-Sort)
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/merge/merge-sort.js)
 
 ---
