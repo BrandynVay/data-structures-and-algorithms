@@ -51,6 +51,7 @@ The merge sort algorithem is one of the best options because of how fast it is.
 ### Learning Objectives
 * Today You will learn how an merge sort algorithm works and how it functions.
 * Merge Sort Diagram
+
 ![Merge Visual](http://cdn.differencebetween.net/wp-content/uploads/2018/11/Difference-between-Quick-Sort-and-Merge-Sort-.png)
 
 ### Algorithm
