@@ -51,7 +51,7 @@ The merge sort algorithem is one of the best options because of how fast it is.
 ### Learning Objectives
 * Today You will learn how an merge sort algorithm works and how it functions.
 * Merge Sort Diagram
-  ![Merge Sort Visual](https://camo.githubusercontent.com/64ba2bcbd5c11779657e40a1d03d0ea691f6fa57/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f632f63632f4d657267652d736f72742d6578616d706c652d33303070782e676966)
+  * ![Merge Visual](http://cdn.differencebetween.net/wp-content/uploads/2018/11/Difference-between-Quick-Sort-and-Merge-Sort-.png)
 
 ### Algorithm
 The Merge Sort algorithem sorts an array of numbers. The merge sort will take the array and divide it in half recursivly until you have many array of length one. It will then compare each array against another and it will push the smaller value into the sorted array.
