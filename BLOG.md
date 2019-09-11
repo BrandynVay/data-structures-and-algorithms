@@ -3,6 +3,8 @@
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/insertion/insertion-sort.js)
 2. [Merge Sort](#Merge-Sort)
   * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/merge/merge-sort.js)
+3. [Quick Sort](#Quick-Sort)
+  * [Code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/sort/quick/quick-sort.js)
 
 ---
 
