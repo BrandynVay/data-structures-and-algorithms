@@ -157,3 +157,5 @@ ALGORITHM Swap(arr, i, low)
 
 #### Video
 * [Quicksort Video](https://www.youtube.com/watch?v=MZaf_9IZCrc)
+
+[back to the top](#Table-of-Contents)
