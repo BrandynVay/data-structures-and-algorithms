@@ -105,4 +105,53 @@ ALGORITHM Merge(left, right, arr)
 
 ---
 
+# Quick Sort
+Quicksort algorithm works by picking an element from the array and denoting it as the pivot. All other elements in the array are split into two categories, then they are either less than or greater than the pivot element.
 
+### Learning Objectives
+* Today You will learn how an quick sort algorithm works and how it functions.
+  * ![img](http://cdn.differencebetween.net/wp-content/uploads/2018/11/Difference-between-Quick-Sort-and-Merge-Sort-.png)
+
+### Algorithm
+Each of the two arrays is then put through that very same algorithm. A pivot is chosen and all other values are separated into two arrays of less-than and greater-than values. The sub-array will contain a single value or no value at all, as there will be no more values with which to compare it. The rest of the values were all denoted to be pivots at some previous point and did not trickle down to this lowest sub-array.
+
+### Pseudocode
+
+```javascript
+ALGORITHM QuickSort(arr, left, right)
+    if left < right
+        // Partition the array by setting the position of the pivot value 
+        DEFINE position <-- Partition(arr, left, right)
+        // Sort the left
+        QuickSort(arr, left, position - 1)
+        // Sort the right
+        QuickSort(arr, position + 1, right)
+
+ALGORITHM Partition(arr, left, right)
+    // set a pivot value as a point of reference
+    DEFINE pivot <-- arr[right]
+    // create a variable to track the largest index of numbers lower than the defined pivot
+    DEFINE low <-- left - 1
+    for i <- left to right do
+        if arr[i] <= pivot
+            low++
+            Swap(arr, i, low)
+
+     // place the value of the pivot location in the middle.
+     // all numbers smaller than the pivot are on the left, larger on the right. 
+     Swap(arr, right, low + 1)
+    // return the pivot index point
+     return low + 1
+
+ALGORITHM Swap(arr, i, low)
+    DEFINE temp;
+    temp <-- arr[i]
+    arr[i] <-- arr[low]
+    arr[low] <-- temp
+```
+
+#### Readings and References
+* [Quick Sort Reading](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort/)
+
+#### Video
+* [Quicksort Video](https://www.youtube.com/watch?v=MZaf_9IZCrc)
