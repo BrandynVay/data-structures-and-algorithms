@@ -112,7 +112,7 @@ Quicksort algorithm works by picking an element from the array and denoting it a
 
 ### Learning Objectives
 * Today You will learn how an quick sort algorithm works and how it functions.
-  * ![img](http://cdn.differencebetween.net/wp-content/uploads/2018/11/Difference-between-Quick-Sort-and-Merge-Sort-.png)
+  * ![img](https://i2.wp.com/www.techiedelight.com/wp-content/uploads/Quicksort.png?zoom=2&w=1100&ssl=1)
 
 ### Algorithm
 Each of the two arrays is then put through that very same algorithm. A pivot is chosen and all other values are separated into two arrays of less-than and greater-than values. The sub-array will contain a single value or no value at all, as there will be no more values with which to compare it. The rest of the values were all denoted to be pivots at some previous point and did not trickle down to this lowest sub-array.
