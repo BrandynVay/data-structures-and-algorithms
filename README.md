@@ -208,7 +208,11 @@ Implement a Hashtable with the following methods:
   * `hash`: takes in an arbitrary key and returns an index in the collection.
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+O(1)
 
 ## API
-<!-- Description of each method publicly available in each of your hashtable -->
+1. Hash Table
+  * `add()`
+  * `get()`
+  * `contains()`
+  * `hash()`
