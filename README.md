@@ -23,7 +23,7 @@
 1. [Trees](#trees)
   * [trees code](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
 2. [Hash Table](#Hash-Table)
-  * [hash table code]()
+  * [hash table code](https://github.com/BrandynVay/data-structures-and-algorithms/blob/master/data-structures/hashtable/hashtable.js)
 
 ---
 
