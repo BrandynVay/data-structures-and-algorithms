@@ -23,7 +23,7 @@
 10. [Code Challenge 32](#Code-Challenge-32)
   * [tree intersection](https://github.com/BrandynVay/data-structures-and-algorithms/blob/master/data-structures/treeIntersection/tree-intersection.js)
 10. [Code Challenge 33](#Code-Challenge-33)
-  * [left join]()
+  * [left join](https://github.com/BrandynVay/data-structures-and-algorithms/blob/master/data-structures/leftJoin/left-join.js)
 
 ## DSA Implementation
 1. [Trees](#trees)
