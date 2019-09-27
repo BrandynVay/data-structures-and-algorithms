@@ -21,7 +21,7 @@
 10. [Code Challenge 31](#Code-Challenge-31)
   * [repeated word](https://github.com/BrandynVay/data-structures-and-algorithms/blob/master/data-structures/repeatedWord/repeated-word.js)
 10. [Code Challenge 32](#Code-Challenge-32)
-  * [tree intersection]()
+  * [tree intersection](https://github.com/BrandynVay/data-structures-and-algorithms/blob/master/data-structures/treeIntersection/tree-intersection.js)
 10. [Code Challenge 33](#Code-Challenge-33)
   * [left join]()
 
