@@ -19,7 +19,7 @@
 9. [Code Challenge 18](#Code-Challenge-18)
   * [find maximum binary tree](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
 10. [Code Challenge 31](#Code-Challenge-31)
-  * [repeated word]()
+  * [repeated word](https://github.com/BrandynVay/data-structures-and-algorithms/blob/master/data-structures/repeatedWord/repeated-word.js)
 10. [Code Challenge 32](#Code-Challenge-32)
   * [tree intersection]()
 10. [Code Challenge 33](#Code-Challenge-33)
