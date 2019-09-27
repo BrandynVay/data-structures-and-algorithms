@@ -18,6 +18,12 @@
   * [breadth fist](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
 9. [Code Challenge 18](#Code-Challenge-18)
   * [find maximum binary tree](https://github.com/KlNGU/data-structures-and-algorithms/blob/master/data-structures/tree/tree.js)
+10. [Code Challenge 31](#Code-Challenge-31)
+  * [repeated word]()
+10. [Code Challenge 32](#Code-Challenge-32)
+  * [tree intersection]()
+10. [Code Challenge 33](#Code-Challenge-33)
+  * [left join]()
 
 ## DSA Implementation
 1. [Trees](#trees)
@@ -170,6 +176,59 @@
 
 ### Solution
 ![Code Challenge 18](./assets/whiteboard-img/code-challenge-18.jpeg)
+
+[back to the top](#Table-of-Contents)
+
+---
+
+# Code Challenge 31
+
+## Authors: Brandyn Vay
+
+## Challenge
+  * Write a function that accepts a lengthy string parameter.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 31](./assets/whiteboard-img/code-challenge-31.jpeg)
+
+[back to the top](#Table-of-Contents)
+
+---
+
+# Code Challenge 32
+
+## Authors: Brandyn Vay
+
+## Challenge
+  * Write a function called `tree_intersection` that takes two binary tree parameters.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 32](./assets/whiteboard-img/code-challenge-32.jpeg)
+
+[back to the top](#Table-of-Contents)
+
+---
+
+# Code Challenge 33
+
+## Authors: Brandyn Vay
+
+## Challenge
+  * Write a function that LEFT JOINs two hashmaps into a single data structure.
+  * The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+  * The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+  * Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.
+  * LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+  * The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
+  
+### Approach & Efficiency
+
+### Solution
+![Code Challenge 33](./assets/whiteboard-img/code-challenge-33.jpeg)
 
 [back to the top](#Table-of-Contents)
 
