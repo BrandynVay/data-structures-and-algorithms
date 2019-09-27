@@ -228,7 +228,7 @@
 ### Approach & Efficiency
 
 ### Solution
-![Code Challenge 33](./assets/whiteboard-img/code-challenge-33.jpeg)
+![Code Challenge 33](./assets/whiteboard-img/code-challenge-33.JPG)
 
 [back to the top](#Table-of-Contents)
 
